@@ -25,7 +25,7 @@ const Header = ({data}) => {
       <i className="ri-calendar-fill text-blue-400"></i> {data.release_date || 'NaN'}
       <i className="ri-film-fill text-blue-400 ml-5"></i> {data.media_type.toUpperCase() || 'NaN'}
       </p>
-      <Link className="p-3 rounded-md bg-blue-500 text-white font-semibold mt-4">
+      <Link className="p-3 rounded-md bg-blue-600 hover:bg-blue-800 text-white font-semibold mt-4">
         {" "}
         Watch Trailer
       </Link>
