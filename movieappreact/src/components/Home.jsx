@@ -1,4 +1,5 @@
 import Sidenav from "./templates/Sidenav";
+import TopNav from "./templates/TopNav";
 
 const Home = () => {
 
@@ -8,7 +9,9 @@ const Home = () => {
   return (
     <>
     <Sidenav />
-    <div className="w-[80%] h-full"></div>
+    <div className="w-[80%] h-full">
+      <TopNav />
+    </div>
     </>
   )
 }
