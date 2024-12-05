@@ -3,11 +3,11 @@
 import { Link } from "react-router-dom"
 
 
-const Cards = ({ data }) => {
+const Cards = ({ data, title }) => {
     return (
         <div className="w-full flex flex-wrap items-center justify-center gap-x-8 gap-y-10 mt-5 px-[2%] bg-[#1F1E24] ">
             {data.map((c, i) => (
-                <Link key={i} className="w-[230px] xl:h-[400px] rounded-lg lg:h-[300px] relative">
+                <Link to={`/${c.media_type || title}/details/${c.id}`} key={i} className="w-[230px] xl:h-[400px] rounded-lg lg:h-[300px] relative">
                     <img className="h-[40vh] object-cover rounded-lg shadow-xl hover:scale-95 duration-200" src={`
                         https://image.tmdb.org/t/p/original/${c.backdrop_path || c.poster_path || c.profile_path}`
                     } alt=""

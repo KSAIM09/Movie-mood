@@ -29,7 +29,7 @@ const Trending = () => {
     // has more for infinite scroll
     const [hasMore, setHasMore] = useState(true)
 
-    document.title = 'Trending ' + category.toUpperCase();
+    document.title = 'Movie-Mood | Trending ' + category.toUpperCase();
 
     // Get trending
     const GetTrending = async () => {

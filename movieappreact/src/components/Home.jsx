@@ -10,7 +10,7 @@ const Home = () => {
 
 
   // Page Title
-  document.title = 'Home';
+  document.title = 'Movie-Mood | Home';
 
   // Wallpaper
   const [wallpaper, setWallpaper] = useState(null);

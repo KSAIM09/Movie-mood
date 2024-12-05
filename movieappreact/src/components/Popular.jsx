@@ -28,7 +28,7 @@ const Popular = () => {
     // has more for infinite scroll
     const [hasMore, setHasMore] = useState(true)
 
-    document.title = 'Popular ' + category.toUpperCase();
+    document.title = 'Movie-Mood | Popular ' + category.toUpperCase();
 
     const GetPopular = async () => {
         try {

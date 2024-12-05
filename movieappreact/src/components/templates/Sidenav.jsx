@@ -33,7 +33,7 @@ const Sidenav = () => {
                 duration-300"
             ><i className="ri-bard-fill mr-2"></i> Popular</Link>
             <Link to="/movie" className="p-5 rounded-md hover:bg-blue-500  hover:text-white duration-300"><i className="ri-film-line mr-2"></i> Movies</Link>
-            <Link to="/tvShows" className="p-5 rounded-md hover:bg-blue-500  hover:text-white duration-300"><i className="ri-tv-2-fill mr-2"></i> Tv Shows</Link>
+            <Link to="/tv" className="p-5 rounded-md hover:bg-blue-500  hover:text-white duration-300"><i className="ri-tv-2-fill mr-2"></i> Tv Shows</Link>
             <Link to="/person" className="p-5 rounded-md hover:bg-blue-500  hover:text-white duration-300"><i className="ri-star-fill mr-2"></i> People's Fav</Link>
         </nav>
 

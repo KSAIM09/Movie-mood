@@ -27,7 +27,7 @@ const Movie = () => {
     // has more for infinite scroll
     const [hasMore, setHasMore] = useState(true)
 
-    document.title = 'Movie ' + category.toUpperCase();
+    document.title = 'Movie-Mood | Movie ' + category.toUpperCase();
 
     const GetMovie = async () => {
         try {
@@ -85,7 +85,7 @@ const Movie = () => {
                 hasMore={hasMore}
                 dataLength={movie.length}
             >
-                <Cards data={movie} title={category} />
+                <Cards data={movie} title="movie" />
             </InfiniteScroll>
 
 

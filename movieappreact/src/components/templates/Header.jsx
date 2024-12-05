@@ -20,7 +20,7 @@ const Header = ({data}) => {
       <h1
         className="text-5xl font-bold text-white  w-[70%]"
       >{data.name || data.title || data.original_name || data.original_title}</h1>
-      <p className="w-[60%] text-white mt-3 mb-2">{data.overview.slice(0, 150)}...<Link className="text-blue-400"> More</Link></p>
+      <p className="w-[60%] text-white mt-3 mb-2">{data.overview.slice(0, 150)}...<Link to={`/${data.media_type}/details/${data.id}`} className="text-blue-400"> More</Link></p>
       <p className="text-white">
       <i className="ri-calendar-fill text-blue-400"></i> {data.release_date || 'NaN'}
       <i className="ri-film-fill text-blue-400 ml-5"></i> {data.media_type.toUpperCase() || 'NaN'}

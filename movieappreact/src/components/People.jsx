@@ -28,7 +28,7 @@ const People = () => {
      // has more for infinite scroll
      const [hasMore, setHasMore] = useState(true)
  
-     document.title = 'Tv Shows ' + category.toUpperCase();
+     document.title = 'Movie-Mood | People ' + category.toUpperCase();
  
      const GetPerson = async () => {
          try {
@@ -85,7 +85,7 @@ const People = () => {
             hasMore={hasMore}
             dataLength={person.length}
         >
-            <Cards data={person} title={category} />
+            <Cards data={person} title="person" />
         </InfiniteScroll>
 
 
